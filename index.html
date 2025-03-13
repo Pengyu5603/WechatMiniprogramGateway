@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳转到微信小程序</title>
+    <script>
+        function redirectToWeChatMiniProgram() {
+            window.location.href = "weixin://dl/business/?appid=wxae8ba07bdeadf2e1&path=pages/entrance/entrance";
+        }
+    </script>
+</head>
+<body>
+    <h2>请点击按钮打开微信小程序</h2>
+    <button onclick="redirectToWeChatMiniProgram()">打开小程序</button>
+    <p>如果无法打开，请复制以下链接到浏览器：</p>
+    <p>weixin://dl/business/?appid=小程序AppID&path=pages/index/index</p>
+</body>
+</html>
